@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>PRUEBA STT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./index.js"></script>
+        <style>
+            input{
+                display: block;
+                margin: auto;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <table style="text-align: center;"  border="3" align="center">
+                <tr>
+                    <td colspan="5">
+                        <h2>1. Prueba Técnica JS ITOS</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" id="punto2" name="punto2" value="PUNTO 2" style="background-color: greenyellow" onclick="visualizaPunto('2')">
+                    </td>
+                    <td>
+                        <input type="submit" id="punto3" name="punto3" value="PUNTO 3" style="background-color: greenyellow" onclick="visualizaPunto('3')">
+                    </td>
+                    <td>
+                        <input type="submit" id="punto4" name="punto4" value="PUNTO 4" style="background-color: greenyellow" onclick="visualizaPunto('4')">
+                    </td>
+                    <td>
+                        <input type="submit" id="punto5" name="punto5" value="PUNTO 5" style="background-color: greenyellow" onclick="visualizaPunto('5')">
+                    </td>                         
+                    <td>
+                        <input type="submit" id="punto6" name="punto6" value="PUNTO 6" style="background-color: greenyellow" onclick="visualizaPunto('6')">
+                    </td>                         
+                </tr>
+                <tr>
+                    <td>
+                        <div id="punto_ejecucion2">
+                            Ingrese año a validar:
+                            <input type="text" id="anio_validar" name="anio_validar">
+                            <input type="submit" id="calcular_anio" onclick="calcularAnio()" value="Validar">
+                            <input type="text" id="respuesta2" name="respuesta2" disabled="">
+                        </div>
+                    </td>
+                    <td>
+                        <div id="punto_ejecucion3">
+                            Ingrese Num Filas:
+                            <input type="text" id="filas" name="filas">
+                            Ingrese Num Columnas
+                            <input type="text" id="columnas" name="columnas">
+                            <input type="submit" id="validar_tabla" onclick="validarTabla()" value="Dibujar">                            
+                        </div>
+                        <div id="respuesta3" align="center"></div>
+                    </td>
+                    <td>
+                        <div id="punto_ejecucion4">
+                            <input type="submit" id="organizar_arreglo" onclick="crearArreglo(1)" value="Crear Arreglo">                            
+                        </div>
+                        <div id="respuesta4" align="center">
+                            <textarea id="respuestatext4" name="respuestatext4" style="width: 435px;" disabled=""></textarea>
+                            <input type="submit" id="organizar_arreglo" onclick="crearArreglo(2)" value="Organizar Arreglo">
+                            <textarea id="respuestaTextOrg" name="respuestaText4Org" style="width: 435px;" disabled=""></textarea>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="punto_ejecucion5">
+                            <input type="submit" id="organizar_arreglo" onclick="crearArreglos(1)" value="Crear Arreglo">   
+                            <input type="text" id="respuesta5_1" name="respuesta5_1" disabled="">
+                            <input type="text" id="respuesta5_2" name="respuesta5_2" disabled="">
+                            
+                            Union <input type="text" id="union" name="union" style="width: 250px;" disabled="">
+                            Interseccion <input type="text" id="interseccion" name="interseccion" style="width: 250px;" disabled="">
+                            Diferencia <input type="text" id="diferencia" name="diferencia" style="width: 250px;" disabled="">
+                            Diferencia Simetrica <input type="text" id="diferencia_simetrica" name="diferencia_simetrica" style="width: 250px;" disabled="">
+                        </div>
+                    </td>                    
+                    <td>
+                        <div id="punto_ejecucion6">
+                            <input type="submit" id="organizar_arreglo" onclick="window.open('banxico.html');" value="Consumir API">                             
+                        </div>
+                    </td>                    
+                </tr>
+            </table>
+        </div>        
+    </body>
+</html>
